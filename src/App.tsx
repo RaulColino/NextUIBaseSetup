@@ -1,5 +1,5 @@
 import { NextUIProvider } from "@nextui-org/react";
-import Dashboard from "./Example";
+import Example from "./components/Example";
 import { appThemeKeys, appThemes } from "./theme/app-theme";
 import { ThemeProvider } from "next-themes";
 
@@ -12,7 +12,7 @@ function App() {
       value={appThemes}
     >
       <NextUIProvider>
-        <Dashboard />
+        <Example />
       </NextUIProvider>
     </ThemeProvider>
   );

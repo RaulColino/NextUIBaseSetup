@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, styled, useTheme } from "@nextui-org/react";
 import { useTheme as useNextThemes } from "next-themes";
-import { appThemeKeys, appThemes } from "./theme/app-theme";
+import { appThemeKeys, appThemes } from "../theme/app-theme";
 
 /* Tips: Don't install stitchesjs, use it from @nextui-org/react as it is already included in NextUI.
 If you do it you cant use the theme from NextUI. */
@@ -21,7 +21,7 @@ const Container = styled("div", {
 
 type Props = {};
 
-export default function Dashboard({}: Props) {
+export default function Example({}: Props) {
   //const { theme } = useTheme();
   const { theme, setTheme } = useNextThemes();
   return (
